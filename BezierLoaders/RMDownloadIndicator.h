@@ -25,11 +25,17 @@ typedef enum {
 // used to stroke the covering slice (default: (kRMClosedIndicator = white), (kRMMixedIndictor = white))
 @property(nonatomic, strong)UIColor *strokeColor;
 
+// used to stroke the background path the covering slice (default: (kRMClosedIndicator = gray))
+@property(nonatomic, strong)UIColor *closedIndicatorBackgroundStrokeColor;
+
 // init with frame and type
 // if() - (id)initWithFrame:(CGRect)frame is used the default type = kRMFilledIndicator
 - (id)initWithFrame:(CGRect)frame type:(RMIndicatorType)type;
 
 // prepare the download indicator
 - (void)loadIndicator;
+
+// update the downloadIndicator
+- (void)updateWithTotalBytes:(CGFloat)bytes downloadedBytes:(CGFloat)downloadedBytes;
 
 @end

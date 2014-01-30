@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3DF60F1D189A0280006D5850 /* RMDownloadIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF60F1C189A0280006D5850 /* RMDownloadIndicator.m */; };
+		3DF60F3F189A320F006D5850 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF60F3E189A320F006D5850 /* MobileCoreServices.framework */; };
+		3DF60F41189A3215006D5850 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF60F40189A3215006D5850 /* Security.framework */; };
+		3DF60F43189A3221006D5850 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF60F42189A3221006D5850 /* SystemConfiguration.framework */; };
 		4F2CFB2B18992D630091E002 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2CFB2A18992D630091E002 /* QuartzCore.framework */; };
 		4F9B1AFB186F302C002F0464 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9B1AFA186F302C002F0464 /* Foundation.framework */; };
 		4F9B1AFD186F302C002F0464 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9B1AFC186F302C002F0464 /* CoreGraphics.framework */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		3DF60F1B189A0280006D5850 /* RMDownloadIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDownloadIndicator.h; sourceTree = "<group>"; };
 		3DF60F1C189A0280006D5850 /* RMDownloadIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDownloadIndicator.m; sourceTree = "<group>"; };
+		3DF60F3E189A320F006D5850 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3DF60F40189A3215006D5850 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3DF60F42189A3221006D5850 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4F2CFB2A18992D630091E002 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4F9B1AF7186F302C002F0464 /* BezierLoaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BezierLoaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9B1AFA186F302C002F0464 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF60F43189A3221006D5850 /* SystemConfiguration.framework in Frameworks */,
+				3DF60F41189A3215006D5850 /* Security.framework in Frameworks */,
+				3DF60F3F189A320F006D5850 /* MobileCoreServices.framework in Frameworks */,
 				4F2CFB2B18992D630091E002 /* QuartzCore.framework in Frameworks */,
 				4F9B1AFD186F302C002F0464 /* CoreGraphics.framework in Frameworks */,
 				4F9B1AFF186F302C002F0464 /* UIKit.framework in Frameworks */,
@@ -90,6 +99,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DF60F20189A316A006D5850 /* SampleClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SampleClasses;
+			sourceTree = SOURCE_ROOT;
+		};
 		4F9B1AEE186F302C002F0464 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +128,9 @@
 		4F9B1AF9186F302C002F0464 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DF60F42189A3221006D5850 /* SystemConfiguration.framework */,
+				3DF60F40189A3215006D5850 /* Security.framework */,
+				3DF60F3E189A320F006D5850 /* MobileCoreServices.framework */,
 				4F2CFB2A18992D630091E002 /* QuartzCore.framework */,
 				4F9B1AFA186F302C002F0464 /* Foundation.framework */,
 				4F9B1AFC186F302C002F0464 /* CoreGraphics.framework */,
@@ -124,6 +143,7 @@
 		4F9B1B00186F302C002F0464 /* BezierLoaders */ = {
 			isa = PBXGroup;
 			children = (
+				3DF60F20189A316A006D5850 /* SampleClasses */,
 				4F9B1B09186F302C002F0464 /* AppDelegate.h */,
 				4F9B1B0A186F302C002F0464 /* AppDelegate.m */,
 				4F9B1B0C186F302C002F0464 /* Main_iPhone.storyboard */,
