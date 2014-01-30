@@ -198,5 +198,25 @@
     }
 }
 
+#pragma mark -
+#pragma mark Setter Methods
+- (void)setFillColor:(UIColor *)fillColor
+{
+    if(_type == kRMClosedIndicator)
+        _fillColor = [UIColor clearColor];
+    else
+        _fillColor = fillColor;
+}
+
+- (void)setRadiusPercent:(CGFloat)radiusPercent
+{
+    if(radiusPercent > 0.5)
+        _radiusPercent = 0.5;
+    else if (radiusPercent < 0)
+        _radiusPercent = 0;
+    else
+        _radiusPercent = radiusPercent;
+        
+}
 
 @end
