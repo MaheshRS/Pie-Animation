@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "BezierRoundLoader.h"
+#import "RMDownloadIndicator.h"
 
 @interface ViewController ()
 
@@ -19,10 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor grayColor];
     
-    BezierRoundLoader *roundLoader = [[BezierRoundLoader alloc]initWithFrame:self.view.bounds];
-    [roundLoader setBackgroundColor:[UIColor whiteColor]];
-    [self.view addSubview:roundLoader];
+    CGRect rect = CGRectMake((CGRectGetWidth(self.view.bounds) - 100)/2, (CGRectGetHeight(self.view.bounds) - 100)/2, 100, 100);
+    RMDownloadIndicator *downloadIndicator = [[RMDownloadIndicator alloc]initWithFrame:rect type:kRMClosedIndicator];
+    //[downloadIndicator setBackgroundColor:[UIColor clearColor]];
+    [self.view addSubview:downloadIndicator];
+     [downloadIndicator loadIndicator];
 }
 
 - (void)didReceiveMemoryWarning

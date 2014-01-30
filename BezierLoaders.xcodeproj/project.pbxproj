@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DF60F1D189A0280006D5850 /* RMDownloadIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF60F1C189A0280006D5850 /* RMDownloadIndicator.m */; };
 		4F2CFB2B18992D630091E002 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2CFB2A18992D630091E002 /* QuartzCore.framework */; };
 		4F9B1AFB186F302C002F0464 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9B1AFA186F302C002F0464 /* Foundation.framework */; };
 		4F9B1AFD186F302C002F0464 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9B1AFC186F302C002F0464 /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DF60F1B189A0280006D5850 /* RMDownloadIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDownloadIndicator.h; sourceTree = "<group>"; };
+		3DF60F1C189A0280006D5850 /* RMDownloadIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDownloadIndicator.m; sourceTree = "<group>"; };
 		4F2CFB2A18992D630091E002 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4F9B1AF7186F302C002F0464 /* BezierLoaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BezierLoaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9B1AFA186F302C002F0464 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,6 +132,8 @@
 				4F9B1B13186F302C002F0464 /* ViewController.m */,
 				4F9B1B32186F311A002F0464 /* BezierRoundLoader.h */,
 				4F9B1B33186F311A002F0464 /* BezierRoundLoader.m */,
+				3DF60F1B189A0280006D5850 /* RMDownloadIndicator.h */,
+				3DF60F1C189A0280006D5850 /* RMDownloadIndicator.m */,
 				4F9B1B15186F302C002F0464 /* Images.xcassets */,
 				4F9B1B01186F302C002F0464 /* Supporting Files */,
 			);
@@ -265,6 +270,7 @@
 				4F9B1B14186F302C002F0464 /* ViewController.m in Sources */,
 				4F9B1B0B186F302C002F0464 /* AppDelegate.m in Sources */,
 				4F9B1B34186F311A002F0464 /* BezierRoundLoader.m in Sources */,
+				3DF60F1D189A0280006D5850 /* RMDownloadIndicator.m in Sources */,
 				4F9B1B07186F302C002F0464 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
