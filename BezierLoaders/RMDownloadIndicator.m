@@ -210,10 +210,8 @@
 
 - (void)setRadiusPercent:(CGFloat)radiusPercent
 {
-    if(radiusPercent > 0.5)
-        _radiusPercent = 0.5;
-    else if (radiusPercent < 0)
-        _radiusPercent = 0;
+    if(radiusPercent > 0.5 || radiusPercent < 0)
+        return;
     else
         _radiusPercent = radiusPercent;
         
