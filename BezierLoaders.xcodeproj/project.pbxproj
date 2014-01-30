@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2EC11E189A56FF00E5F33C /* RMDisplayLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2EC11D189A56FF00E5F33C /* RMDisplayLabel.m */; };
 		3DF60F1D189A0280006D5850 /* RMDownloadIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF60F1C189A0280006D5850 /* RMDownloadIndicator.m */; };
 		3DF60F3F189A320F006D5850 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF60F3E189A320F006D5850 /* MobileCoreServices.framework */; };
 		3DF60F41189A3215006D5850 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF60F40189A3215006D5850 /* Security.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2EC11C189A56FF00E5F33C /* RMDisplayLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMDisplayLabel.h; path = BezierLoaders/RMDisplayLabel.h; sourceTree = SOURCE_ROOT; };
+		3D2EC11D189A56FF00E5F33C /* RMDisplayLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMDisplayLabel.m; path = BezierLoaders/RMDisplayLabel.m; sourceTree = SOURCE_ROOT; };
 		3DF60F1B189A0280006D5850 /* RMDownloadIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDownloadIndicator.h; sourceTree = "<group>"; };
 		3DF60F1C189A0280006D5850 /* RMDownloadIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDownloadIndicator.m; sourceTree = "<group>"; };
 		3DF60F3E189A320F006D5850 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -154,6 +157,8 @@
 				4F9B1B33186F311A002F0464 /* BezierRoundLoader.m */,
 				3DF60F1B189A0280006D5850 /* RMDownloadIndicator.h */,
 				3DF60F1C189A0280006D5850 /* RMDownloadIndicator.m */,
+				3D2EC11C189A56FF00E5F33C /* RMDisplayLabel.h */,
+				3D2EC11D189A56FF00E5F33C /* RMDisplayLabel.m */,
 				4F9B1B15186F302C002F0464 /* Images.xcassets */,
 				4F9B1B01186F302C002F0464 /* Supporting Files */,
 			);
@@ -291,6 +296,7 @@
 				4F9B1B0B186F302C002F0464 /* AppDelegate.m in Sources */,
 				4F9B1B34186F311A002F0464 /* BezierRoundLoader.m in Sources */,
 				3DF60F1D189A0280006D5850 /* RMDownloadIndicator.m in Sources */,
+				3D2EC11E189A56FF00E5F33C /* RMDisplayLabel.m in Sources */,
 				4F9B1B07186F302C002F0464 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

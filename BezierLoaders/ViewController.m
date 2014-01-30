@@ -25,7 +25,7 @@
     self.view.backgroundColor = [UIColor grayColor];
     
     CGRect rect = CGRectMake((CGRectGetWidth(self.view.bounds) - 100)/2, (CGRectGetHeight(self.view.bounds) - 100)/2, 100, 100);
-    RMDownloadIndicator *downloadIndicator = [[RMDownloadIndicator alloc]initWithFrame:rect type:kRMMixedIndictor];
+    RMDownloadIndicator *downloadIndicator = [[RMDownloadIndicator alloc]initWithFrame:rect type:kRMClosedIndicator];
     [downloadIndicator setBackgroundColor:[UIColor whiteColor]];
     [downloadIndicator setFillColor:[UIColor colorWithRed:16./255 green:119./255 blue:234./255 alpha:1.0f]];
     [downloadIndicator setStrokeColor:[UIColor colorWithRed:16./255 green:119./255 blue:234./255 alpha:1.0f]];
@@ -57,7 +57,7 @@
     double delayInSeconds3 = delayInSeconds2 + 2.5;
     dispatch_time_t popTime3 = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds3 * NSEC_PER_SEC));
     dispatch_after(popTime3, dispatch_get_main_queue(), ^(void){
-        [self updateView:25.0f];
+        [self updateView:50.0f];
     });
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "RMDownloadIndicator.h"
+#import "RMDisplayLabel.h"
 
 @interface RMDownloadIndicator()
 
@@ -29,6 +30,9 @@
 // the last updatedPath
 @property(nonatomic, strong)UIBezierPath *lastUpdatedPath;
 @property(nonatomic, assign)CGFloat lastSourceAngle;
+
+// this is display label that displays % downloaded
+@property(nonatomic, strong)RMDisplayLabel *displayLabel;
 
 @end
 
@@ -79,6 +83,8 @@
         _strokeColor = [UIColor whiteColor];
         _closedIndicatorBackgroundStrokeColor = [UIColor grayColor];
         _coverWidth = 2.0;
+        
+        //[self addDisplayLabel];
     }
     else
     {
@@ -111,6 +117,17 @@
     
     // path array
     _paths = [NSMutableArray array];
+}
+
+- (void)addDisplayLabel
+{
+    self.displayLabel = [[RMDisplayLabel alloc] initWithFrame:CGRectMake((CGRectGetWidth(self.bounds)/2 - 30/2), (CGRectGetHeight(self.bounds)/2 - 30/2), 30, 30)];
+    self.displayLabel.backgroundColor = [UIColor clearColor];
+    self.displayLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:11.5];
+    self.displayLabel.text = @"0";
+    self.displayLabel.textColor = [UIColor grayColor];
+    self.displayLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:self.displayLabel];
 }
 
 - (void)loadIndicator
@@ -226,6 +243,8 @@
     [pathAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
     [pathAnimation setRemovedOnCompletion:YES];
     [_animatingLayer addAnimation:pathAnimation forKey:@"path"];
+    
+    //[self.displayLabel updateValue:downloadedBytes/bytes];
 }
 
 - (CGFloat)destinationAngleForRatio:(CGFloat)ratio
